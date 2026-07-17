@@ -114,8 +114,7 @@ streamlit run dashboard/app.py
 architecture/        架构、数据流与血缘
 contracts/           机器可校验的数据契约
 dashboard/           Streamlit 质量与实验看板
-docs/                案例说明、验证报告与面试讲解
-evidence/            发布、用户、收入证明的空白脱敏模板
+docs/                案例说明、验证报告与讲解
 experiments/         明确标注 DEMO 的基线、消融和盲测样例
 governance/          Dataset Card、权利台账、数据字典与质量规范
 manifests/           数据 / 模型 / 评测版本关联模板
@@ -125,7 +124,7 @@ tests/               单元、契约和端到端测试
 artifacts/           可确定性重建的合成运行产物
 ```
 
-## 已实现与未实现
+## demo已实现与未实现
 
 已实现：
 
