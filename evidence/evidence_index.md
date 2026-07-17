@@ -18,7 +18,6 @@
 | `EVID-DEMO-0001` | `CLAIM-DEMO-0001` | DEMO | 演示一条发布证明的登记方法 | `vault://DEMO/...` | `publication_evidence_template.md` | `待生成文件后填写` | `REVIEWER-DEMO` | `2026-07-16` |
 | `待填写` | `待填写` | UNVERIFIED | `待填写` | `待填写` | `待填写` | `待填写` | `待填写` | `待填写` |
 
-上表第一行完全虚构，不得用于简历、融资、客户销售或版权证明。
 
 ## 3. 推荐声明编号
 
