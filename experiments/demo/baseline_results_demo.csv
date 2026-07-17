@@ -1,0 +1,3 @@
+evidence_status,experiment_id,candidate_id,system_label,model_version,dataset_version,eval_version,eval_task_count,decisive_task_count,win_count,mean_rubric_score,pass_rate,blind_win_rate,tie_count,abstain_count,median_editor_minutes,disclaimer
+DEMO,DEMO-BASELINE-BLIND-001,baseline,prompt_only_template,template-baseline-demo-v0.1.0,novel-demo-data-v0.1.0,novel-gold-demo-v0.1.0,12,10,4,3.10,0.47,0.40,1,1,84,"SYNTHETIC DEMO; NOT REAL MODEL PERFORMANCE OR EDITOR EFFICIENCY"
+DEMO,DEMO-BASELINE-BLIND-001,candidate,workflow_plus_demo_sft,template-candidate-demo-v0.1.0,novel-demo-data-v0.1.0,novel-gold-demo-v0.1.0,12,10,6,3.72,0.67,0.60,1,1,45,"SYNTHETIC DEMO; NOT REAL MODEL PERFORMANCE OR EDITOR EFFICIENCY"

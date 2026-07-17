@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "manifest_type": "evaluation",
+  "evidence_status": "TEMPLATE_NOT_RUN",
+  "eval_version": "novel-gold-demo-v0.1.0",
+  "created_at": null,
+  "rubric_version": null,
+  "task_count": null,
+  "task_type_counts": {},
+  "provenance_type_counts": {},
+  "isolation": {
+    "excluded_from_training_dataset_versions": [
+      "novel-demo-data-v0.1.0"
+    ],
+    "author_overlap_count": null,
+    "work_overlap_count": null,
+    "contamination_hash_hit_count": null,
+    "status": null
+  },
+  "blind_protocol": {
+    "candidate_identity_hidden": null,
+    "presentation_order_randomized": null,
+    "allowed_preferences": [
+      "A",
+      "B",
+      "tie",
+      "abstain"
+    ],
+    "random_seed": null
+  },
+  "files": [
+    {
+      "logical_name": null,
+      "relative_path": null,
+      "record_count": null,
+      "sha256": null
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "decision": null
+  },
+  "disclaimer": "Template only. Null values are not evaluation results."
+}

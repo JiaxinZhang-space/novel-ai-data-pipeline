@@ -1,0 +1,137 @@
+contract_name: novel_ai_dataset_quality
+contract_version: 0.1.0-demo
+status: TARGET_CONTRACT_PARTIALLY_IMPLEMENTED
+hash_algorithm: sha256
+timestamp_format: iso8601_with_timezone
+
+implementation:
+  enforced_in_demo:
+    - R01
+    - R02
+    - R03
+    - S01
+    - S02
+    - D01
+    - L01
+    - L02
+    - L03
+  target_only:
+    - U01
+    - D02
+    - P01
+    - T01
+  note: >-
+    The pipeline and tests do not load this YAML as a generic rule engine.
+    This file defines the production target contract; only the listed demo
+    subset is currently enforced by dedicated code and tests.
+
+identity:
+  shared_traceability_keys:
+    - rights_record_id
+    - work_id
+    - content_sha256
+    - dataset_version
+    - shard_id
+  artifact_logical_ids:
+    sft:
+      primary_key: sample_id
+    preference:
+      primary_key: pair_id
+      required_link_key: sample_id
+    evaluation:
+      primary_key: eval_id
+      required_link_key: sample_id
+
+gates:
+  - id: R01
+    severity: BLOCK
+    metric: valid_rights_coverage
+    operator: eq
+    threshold: 1.0
+  - id: R02
+    severity: BLOCK
+    metric: purpose_permission_coverage
+    operator: eq
+    threshold: 1.0
+  - id: R03
+    severity: BLOCK
+    metric: ineligible_rights_record_count
+    operator: eq
+    threshold: 0
+  - id: S01
+    severity: BLOCK
+    metric: required_field_coverage
+    operator: eq
+    threshold: 1.0
+  - id: S02
+    severity: BLOCK
+    metric: schema_error_count
+    operator: eq
+    threshold: 0
+  - id: U01
+    severity: BLOCK
+    metric: duplicate_primary_key_count
+    operator: eq
+    threshold: 0
+  - id: D01
+    severity: BLOCK
+    metric: exact_duplicate_cross_split_count
+    operator: eq
+    threshold: 0
+  - id: D02
+    severity: BLOCK
+    metric: near_duplicate_cross_split_count
+    operator: eq
+    threshold: 0
+  - id: L01
+    severity: BLOCK
+    metric: work_id_cross_split_count
+    operator: eq
+    threshold: 0
+  - id: L02
+    severity: BLOCK
+    metric: author_id_cross_split_count
+    operator: eq
+    threshold: 0
+  - id: L03
+    severity: BLOCK
+    metric: evaluation_contamination_hit_count
+    operator: eq
+    threshold: 0
+  - id: P01
+    severity: BLOCK
+    metric: unresolved_high_risk_pii_count
+    operator: eq
+    threshold: 0
+  - id: T01
+    severity: BLOCK
+    metric: provenance_traceability_coverage
+    operator: eq
+    threshold: 1.0
+
+split_policy:
+  group_priority:
+    - author_id
+    - work_id
+  derive_samples_after_split: true
+  allowed_splits:
+    - train
+    - validation
+    - evaluation
+  future_optional_splits:
+    - challenge
+
+report_required_fields:
+  - run_id
+  - code_commit_or_normalized_source_snapshot
+  - input_dataset_version
+  - output_dataset_version
+  - contract_version
+  - input_count
+  - output_count
+  - retention_rate
+  - filter_reason_counts
+  - split_statistics
+  - duplicate_statistics
+  - leakage_statistics
+  - final_status

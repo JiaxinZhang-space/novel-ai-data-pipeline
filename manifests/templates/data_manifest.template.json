@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1.0",
+  "manifest_type": "dataset",
+  "evidence_status": "TEMPLATE_NOT_RUN",
+  "dataset_version": "novel-demo-data-v0.1.0",
+  "created_at": null,
+  "run_id": null,
+  "code_commit": null,
+  "pipeline_version": null,
+  "processing_config_sha256": null,
+  "rights_snapshot_version": null,
+  "rights_ledger_sha256": null,
+  "parent_dataset_versions": [],
+  "split_policy": {
+    "group_keys": [
+      "author_id",
+      "work_id"
+    ],
+    "derive_samples_after_split": true,
+    "random_seed": null
+  },
+  "counts": {
+    "input_records": null,
+    "accepted_works": null,
+    "sft_samples": null,
+    "preference_pairs": null,
+    "evaluation_tasks": null
+  },
+  "quality_summary": {
+    "retention_rate": null,
+    "exact_duplicate_count": null,
+    "near_duplicate_count": null,
+    "work_id_cross_split_count": null,
+    "author_id_cross_split_count": null,
+    "evaluation_contamination_hit_count": null,
+    "final_status": null
+  },
+  "files": [
+    {
+      "logical_name": null,
+      "relative_path": null,
+      "record_count": null,
+      "size_bytes": null,
+      "sha256": null
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "decision": null
+  },
+  "disclaimer": "Template only. Null values are not project results."
+}

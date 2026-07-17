@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "manifest_type": "experiment",
+  "evidence_status": "TEMPLATE_NOT_RUN",
+  "experiment_run_id": null,
+  "experiment_type": null,
+  "generated_at": null,
+  "code_commit": null,
+  "dataset_version": "novel-demo-data-v0.1.0",
+  "eval_version": "novel-gold-demo-v0.1.0",
+  "candidate_model_versions": [],
+  "prompt_template_version": null,
+  "generation_config_sha256": null,
+  "random_seeds": [],
+  "frozen_variables": [],
+  "changed_variable": null,
+  "result_files": [
+    {
+      "path": null,
+      "sha256": null,
+      "record_count": null
+    }
+  ],
+  "summary_metrics": {},
+  "review": {
+    "status": "TEMPLATE_NOT_RUN",
+    "reviewer": null,
+    "reviewed_at": null
+  },
+  "demo": true,
+  "demo_marker": "DEMO_SYNTHETIC_NOT_REAL_WORLD_EVIDENCE",
+  "disclaimer": "Template only. Null values and empty metrics are not project results."
+}

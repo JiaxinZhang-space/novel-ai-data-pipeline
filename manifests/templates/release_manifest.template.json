@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "pipeline_version": null,
+  "source_snapshot": {
+    "type": "normalized_source_sha256",
+    "sha256": null,
+    "files": []
+  },
+  "demo": true,
+  "demo_marker": "DEMO_SYNTHETIC_NOT_REAL_WORLD_EVIDENCE",
+  "disclaimer": "Template only. Null values are not evidence that a release was produced or validated.",
+  "release_status": "DEMO_ONLY_NOT_FOR_PRODUCTION",
+  "run_id": null,
+  "generated_at": null,
+  "dataset_version": "novel-demo-data-v0.1.0",
+  "rights_snapshot_version": "rights-demo-v0.1.0",
+  "training_run_id": "DEMO-TRAINING-NOT-EXECUTED-v0.1.0",
+  "model_version": "template-baseline-demo-v0.1.0",
+  "eval_version": "novel-gold-demo-v0.1.0",
+  "parameters": {
+    "evaluation_task_count": null,
+    "near_duplicate_threshold": null,
+    "split_ratio": {},
+    "split_strategy": null
+  },
+  "counts": {
+    "raw_records": null,
+    "rights_accepted": null,
+    "rights_rejected": null,
+    "exact_duplicates": null,
+    "near_duplicates": null,
+    "canonical_stories": null,
+    "sft_train_samples": null,
+    "sft_validation_samples": null,
+    "preference_train_pairs": null,
+    "evaluation_tasks": null,
+    "editor_events": null
+  },
+  "stage_lineage": [
+    {
+      "stage": null,
+      "name": null,
+      "output": null
+    }
+  ],
+  "validation": {
+    "status": null,
+    "quality_gates": {},
+    "contracts": []
+  },
+  "files": [
+    {
+      "path": null,
+      "bytes": null,
+      "record_count": null,
+      "sha256": null
+    }
+  ]
+}

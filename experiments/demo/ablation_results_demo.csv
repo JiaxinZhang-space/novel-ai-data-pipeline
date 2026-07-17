@@ -1,0 +1,6 @@
+evidence_status,experiment_id,variant_id,removed_component,model_version,dataset_version,eval_version,eval_task_count,mean_rubric_score,pass_rate,delta_mean_score_vs_full,disclaimer
+DEMO,DEMO-ABLATION-001,full_demo,none,template-candidate-demo-v0.1.0,novel-demo-data-v0.1.0,novel-gold-demo-v0.1.0,30,3.80,0.70,0.00,"SYNTHETIC DEMO; VALUES ONLY ILLUSTRATE REPORT SHAPE"
+DEMO,DEMO-ABLATION-001,no_near_dedup,near_duplicate_filter,template-candidate-demo-v0.1.0,novel-demo-data-v0.1.0,novel-gold-demo-v0.1.0,30,3.51,0.60,-0.29,"SYNTHETIC DEMO; VALUES ONLY ILLUSTRATE REPORT SHAPE"
+DEMO,DEMO-ABLATION-001,no_editor_diff,editor_revision_samples,template-candidate-demo-v0.1.0,novel-demo-data-v0.1.0,novel-gold-demo-v0.1.0,30,3.42,0.57,-0.38,"SYNTHETIC DEMO; VALUES ONLY ILLUSTRATE REPORT SHAPE"
+DEMO,DEMO-ABLATION-001,synthetic_only,licensed_or_editor_created_samples,template-candidate-demo-v0.1.0,novel-demo-data-v0.1.0,novel-gold-demo-v0.1.0,30,3.28,0.50,-0.52,"SYNTHETIC DEMO; VALUES ONLY ILLUSTRATE REPORT SHAPE"
+DEMO,DEMO-ABLATION-001,no_story_bible,structured_story_context,template-candidate-demo-v0.1.0,novel-demo-data-v0.1.0,novel-gold-demo-v0.1.0,30,3.36,0.53,-0.44,"SYNTHETIC DEMO; VALUES ONLY ILLUSTRATE REPORT SHAPE"

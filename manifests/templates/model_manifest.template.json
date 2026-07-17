@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "manifest_type": "model",
+  "evidence_status": "TEMPLATE_NOT_RUN",
+  "model_version": null,
+  "created_at": null,
+  "training_run_id": null,
+  "base_model": {
+    "name": null,
+    "revision": null,
+    "license": null,
+    "artifact_sha256": null
+  },
+  "training_data": {
+    "dataset_version": "novel-demo-data-v0.1.0",
+    "dataset_manifest_sha256": null,
+    "included_splits": [],
+    "excluded_eval_version": "novel-gold-demo-v0.1.0"
+  },
+  "training_code": {
+    "code_commit": null,
+    "entrypoint": null,
+    "environment_lock_sha256": null
+  },
+  "training_config": {
+    "method": null,
+    "config_path": null,
+    "config_sha256": null,
+    "random_seed": null
+  },
+  "artifact": {
+    "uri": null,
+    "sha256": null,
+    "size_bytes": null
+  },
+  "rights_and_risk": {
+    "rights_snapshot_version": null,
+    "known_restrictions": [],
+    "revocation_status": null
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "decision": null
+  },
+  "disclaimer": "Template only. This file does not prove that a model was trained or deployed."
+}

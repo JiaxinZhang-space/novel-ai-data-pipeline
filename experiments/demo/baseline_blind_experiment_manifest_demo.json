@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "manifest_type": "experiment",
+  "evidence_status": "DEMO",
+  "experiment_run_id": "DEMO-BASELINE-BLIND-001",
+  "experiment_type": "baseline_and_blind_evaluation",
+  "generated_at": "2026-07-16T00:00:00Z",
+  "code_commit": "DEMO-NOT-A-REAL-COMMIT",
+  "dataset_version": "novel-demo-data-v0.1.0",
+  "eval_version": "novel-gold-demo-v0.1.0",
+  "candidate_model_versions": [
+    "template-baseline-demo-v0.1.0",
+    "template-candidate-demo-v0.1.0"
+  ],
+  "prompt_template_version": "prompt-demo-v0.1.0",
+  "generation_config_sha256": null,
+  "random_seeds": [
+    17
+  ],
+  "frozen_variables": [
+    "evaluation_tasks",
+    "generation_parameters",
+    "rubric",
+    "candidate_order_randomization"
+  ],
+  "changed_variable": "DEMO workflow and sample configuration",
+  "result_files": [
+    {
+      "path": "experiments/demo/baseline_results_demo.csv",
+      "sha256": "87c4e35cb37a517769cd4c5dbafb83a705e57e551b39b25c72a986e92a117341",
+      "record_count": 2
+    },
+    {
+      "path": "experiments/demo/blind_evaluation_demo.csv",
+      "sha256": "3badc61baeb20a671a78b3569d96f80d3bb8ff7225306cf44e6db56102645e75",
+      "record_count": 12
+    }
+  ],
+  "summary_metrics": {
+    "total_tasks": 12,
+    "decisive_tasks": 10,
+    "baseline_wins": 4,
+    "candidate_wins": 6,
+    "ties": 1,
+    "abstentions": 1,
+    "baseline_win_rate_decisive": 0.4,
+    "candidate_win_rate_decisive": 0.6,
+    "win_rate_formula": "wins / (baseline_wins + candidate_wins)"
+  },
+  "review": {
+    "status": "DEMO_NOT_REVIEWED",
+    "reviewer": "DEMO-JUDGE-01",
+    "reviewed_at": "2026-07-16T00:00:00Z"
+  },
+  "demo": true,
+  "demo_marker": "DEMO_SYNTHETIC_NOT_REAL_WORLD_EVIDENCE",
+  "disclaimer": "All metrics and identifiers are synthetic. This manifest is not evidence of model quality, editor efficiency, publication, usage, revenue, or copyright ownership."
+}

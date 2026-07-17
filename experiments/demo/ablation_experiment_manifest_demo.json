@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "manifest_type": "experiment",
+  "evidence_status": "DEMO",
+  "experiment_run_id": "DEMO-ABLATION-001",
+  "experiment_type": "single_variable_ablation",
+  "generated_at": "2026-07-16T00:00:00Z",
+  "code_commit": "DEMO-NOT-A-REAL-COMMIT",
+  "dataset_version": "novel-demo-data-v0.1.0",
+  "eval_version": "novel-gold-demo-v0.1.0",
+  "candidate_model_versions": [
+    "template-candidate-demo-v0.1.0"
+  ],
+  "prompt_template_version": "prompt-demo-v0.1.0",
+  "generation_config_sha256": null,
+  "random_seeds": [
+    17,
+    29,
+    43
+  ],
+  "frozen_variables": [
+    "evaluation_tasks",
+    "generation_parameters",
+    "rubric",
+    "base_model_reference"
+  ],
+  "changed_variable": "Exactly one data or workflow component per variant",
+  "result_files": [
+    {
+      "path": "experiments/demo/ablation_results_demo.csv",
+      "sha256": "b4609deacc7bfdef108463994d15181eb9568fe8470d6a2108bf0fe550dfe280",
+      "record_count": 5
+    }
+  ],
+  "summary_metrics": {
+    "variant_count": 5,
+    "full_system_mean_rubric_score": 3.8,
+    "largest_demo_drop_variant": "synthetic_only",
+    "largest_demo_drop": -0.52
+  },
+  "review": {
+    "status": "DEMO_NOT_REVIEWED",
+    "reviewer": "DEMO-JUDGE-01",
+    "reviewed_at": "2026-07-16T00:00:00Z"
+  },
+  "demo": true,
+  "demo_marker": "DEMO_SYNTHETIC_NOT_REAL_WORLD_EVIDENCE",
+  "disclaimer": "All metrics and identifiers are synthetic. This manifest only demonstrates an ablation evidence structure and is not proof of component contribution."
+}
