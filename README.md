@@ -100,7 +100,7 @@ python -m pip install -r requirements-dashboard.txt
 streamlit run dashboard/app.py
 ```
 
-## 面试官 2 分钟阅读路径
+## 2 分钟阅读路径
 
 1. 看本页的项目边界、结果表和架构；
 2. 看 [5 分钟讲解路线](docs/interview_walkthrough.md)；
@@ -131,7 +131,7 @@ artifacts/           可确定性重建的合成运行产物
 
 - 权利字段校验和训练用途硬门；
 - NFKC / 标点 / 空白规范化；
-- SHA-256 精确去重与教学型 MinHash/LSH 近重复候选检测；
+- SHA-256 精确去重与 MinHash/LSH 近重复候选检测；
 - 作者优先、作品不可拆的确定性集合切分；
 - SFT、偏好对和隔离评测任务派生；
 - Schema、泄漏、计数、哈希和版本血缘验证；
@@ -147,21 +147,7 @@ artifacts/           可确定性重建的合成运行产物
 
 MinHash/LSH 在这里用于演示候选发现和回归测试，不能单独证明版权安全。
 
-## 真实项目如何复用
-
-公开仓库永久只保留合成数据。若用于真实项目，应在**新的私有仓库和受控存储**中复用代码结构，并执行：
-
-1. 书面确认数据来源、权利主体、用途、期限、撤回和再分发边界；
-2. 原始正文、合同和凭据进入权限隔离的对象存储，不进入本 Git 历史；
-3. 增加生产级 PII、内容安全、审计日志和人工复核；
-4. 冻结作者/作品分组后再派生训练和评测样本；
-5. 真实数据、模型、评测和发布均生成不可变 Manifest；
-6. 对外只导出经审批的聚合指标、脱敏引用和哈希。
-
-不要在本公开仓库里“替换成真实数据”。
 
 ## 参考与许可
-
-工程方法参考了 DataScale AI 的开源书籍 [《大模型数据工程：架构、算法及项目实战》](https://datascale-ai.github.io/data_engineering_book/)；参考快照和独立实现边界见 [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md)。
 
 代码采用 [MIT License](LICENSE)。合成数据的来源和再分发边界见 [PROVENANCE.md](PROVENANCE.md) 与 [DATA_LICENSE.md](DATA_LICENSE.md)。治理模板不构成法律意见。
