@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://demo.local/contracts/preference_pair.schema.json",
+  "title": "DEMO preference pair",
+  "type": "object",
+  "required": [
+    "pair_id",
+    "sample_id",
+    "prompt",
+    "chosen",
+    "rejected",
+    "preference_reasons",
+    "source_work_id",
+    "source_author_id",
+    "work_id",
+    "author_id",
+    "source_id",
+    "document_id",
+    "rights_record_id",
+    "content_sha256",
+    "dataset_version",
+    "shard_id",
+    "split",
+    "demo"
+  ],
+  "properties": {
+    "pair_id": {"type": "string", "pattern": "^PREF-"},
+    "split": {"const": "train"},
+    "preference_reasons": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string"}
+    },
+    "demo": {"const": true}
+  },
+  "additionalProperties": true
+}

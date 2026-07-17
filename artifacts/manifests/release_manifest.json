@@ -1,0 +1,321 @@
+{
+  "counts": {
+    "canonical_stories": 20,
+    "editor_events": 40,
+    "evaluation_tasks": 30,
+    "exact_duplicates": 2,
+    "near_duplicates": 3,
+    "preference_train_pairs": 24,
+    "raw_records": 27,
+    "rights_accepted": 25,
+    "rights_rejected": 2,
+    "sft_train_samples": 36,
+    "sft_validation_samples": 12
+  },
+  "dataset_version": "novel-demo-data-v0.1.0",
+  "demo": true,
+  "demo_marker": "DEMO_SYNTHETIC_NOT_REAL_WORLD_EVIDENCE",
+  "disclaimer": "DEMO only: all stories, users, editor events, metrics, contracts, model references, and business-like identifiers are synthetic. They are not proof of publication, usage, revenue, copyright ownership, or model performance.",
+  "eval_version": "novel-gold-demo-v0.1.0",
+  "files": [
+    {
+      "bytes": 39,
+      "path": ".novel_evidence_demo_root",
+      "record_count": null,
+      "sha256": "6630e425ac505834970e5ec65e17794c74fd3f9097ce0f570e409f5ea7460a38"
+    },
+    {
+      "bytes": 46822,
+      "path": "datasets/evaluation_isolated.jsonl",
+      "record_count": 30,
+      "sha256": "bbcf34ec27d54be3e13fecb72e45ab1f016e53fb0a8ac1361f2b9847227041ee"
+    },
+    {
+      "bytes": 32665,
+      "path": "datasets/preference_train.jsonl",
+      "record_count": 24,
+      "sha256": "8dc2ac4ad077ac586cbfe21e652b641a7ed0995bf40ac70c18be9424fdcab69b"
+    },
+    {
+      "bytes": 43374,
+      "path": "datasets/sft_train.jsonl",
+      "record_count": 36,
+      "sha256": "b4d720a04476d0eefe063c87f10aa15e8e5b0ed21c394d27523f1cbcfce45323"
+    },
+    {
+      "bytes": 14505,
+      "path": "datasets/sft_validation.jsonl",
+      "record_count": 12,
+      "sha256": "cb8763a2f060e1cd478eeba81b75e804ffbf020745c8cccd9efc26b81cee4ede"
+    },
+    {
+      "bytes": 6860,
+      "path": "datasets/split_assignments.jsonl",
+      "record_count": 20,
+      "sha256": "47be036752620583e208d02b7ea4827186de831ab0caee80fee6c20702f172c5"
+    },
+    {
+      "bytes": 12061,
+      "path": "datasets/story_catalog.jsonl",
+      "record_count": 20,
+      "sha256": "028f9358b895c5a1e27d949f3b28e04fa0b858fb009cac4029cc1f82708fd2c4"
+    },
+    {
+      "bytes": 953,
+      "path": "manifests/version_lineage.json",
+      "record_count": null,
+      "sha256": "07d8237a918c4888ae3938383be92da9539e40a28ab51ca7f53e6f398f956433"
+    },
+    {
+      "bytes": 208,
+      "path": "metrics/dataset_isolation_report.json",
+      "record_count": null,
+      "sha256": "1de13edff76f8e23700b6dd9dec3cc37dfb0863306651dfd9df5b7dec6bfb4f7"
+    },
+    {
+      "bytes": 1071,
+      "path": "metrics/editor_time.csv",
+      "record_count": null,
+      "sha256": "2e5389d8438fe05770c8eecafac55f75f9586991c2ee6b48be07d408b3b8cde7"
+    },
+    {
+      "bytes": 197,
+      "path": "metrics/pipeline_funnel.csv",
+      "record_count": null,
+      "sha256": "e39271bbf7fd77267cb33e220c785d9635438179ce6534295034b172c1f0ebc3"
+    },
+    {
+      "bytes": 1873,
+      "path": "metrics/quality_metrics.json",
+      "record_count": null,
+      "sha256": "d9707353b70ed19ba545b8492fe467b2f78ee782e8f4d8c1d1b618a48c749f56"
+    },
+    {
+      "bytes": 72,
+      "path": "metrics/split_counts.csv",
+      "record_count": null,
+      "sha256": "44872c53bc59001bdeb3a55505314f4a6dcaf425b3e0679a6b6234dd7a4a5c33"
+    },
+    {
+      "bytes": 387,
+      "path": "metrics/split_leakage_report.json",
+      "record_count": null,
+      "sha256": "17658b47fddc1bf6e890f0bb4366dc8844ea4a83224e3321444e8b81809540c2"
+    },
+    {
+      "bytes": 23680,
+      "path": "operations/editor_events.jsonl",
+      "record_count": 40,
+      "sha256": "4d11e2f0cc4df91b2348a0e2266e87a11e56b5d6bb92d8ebabce015050e12ec7"
+    },
+    {
+      "bytes": 94544,
+      "path": "processed/canonical_stories.jsonl",
+      "record_count": 20,
+      "sha256": "0b01c04de318e56f0fda80e70631f82cda88f3a55991ca5bb64464025ad2bda8"
+    },
+    {
+      "bytes": 24172,
+      "path": "processed/duplicate_rejections.jsonl",
+      "record_count": 5,
+      "sha256": "09ac4591c1f75740e3450c77a3b6a8d6e475de8a72fc6abd884003dc8144bf17"
+    },
+    {
+      "bytes": 116083,
+      "path": "processed/normalized_records.jsonl",
+      "record_count": 25,
+      "sha256": "6cd7ea9800c9c4147dc412b9b72d373856d1cc8cb81e5ec78a701ba8f8da8632"
+    },
+    {
+      "bytes": 66390,
+      "path": "processed/rights_accepted.jsonl",
+      "record_count": 25,
+      "sha256": "a1700300140bbafe3c78460a13bbcdfaa200a74f82b9e7da77416e311069bec5"
+    },
+    {
+      "bytes": 5644,
+      "path": "processed/rights_rejected.jsonl",
+      "record_count": 2,
+      "sha256": "3ece1cbd35a33cddb57602c752203d9441ed34cdb71bf556580578c1ee6eaf59"
+    },
+    {
+      "bytes": 71649,
+      "path": "raw/raw_records.jsonl",
+      "record_count": 27,
+      "sha256": "23949f4c21049f050f910a370b49582141954664e47a8b155ef06d481a2fc07a"
+    },
+    {
+      "bytes": 3360,
+      "path": "reports/overview.html",
+      "record_count": null,
+      "sha256": "5de7f47893f7c208728e122c14d97e56a0a360aa8111930d055363746736dce0"
+    }
+  ],
+  "generated_at": "2026-07-16T00:00:00Z",
+  "model_version": "template-baseline-demo-v0.1.0",
+  "parameters": {
+    "evaluation_task_count": 30,
+    "near_duplicate_threshold": 0.88,
+    "split_ratio": {
+      "evaluation": 0.2,
+      "train": 0.6,
+      "validation": 0.2
+    },
+    "split_strategy": "author_group_hash_v1"
+  },
+  "pipeline_version": "0.1.0",
+  "release_status": "DEMO_ONLY_NOT_FOR_PRODUCTION",
+  "rights_snapshot_version": "rights-demo-v0.1.0",
+  "run_id": "novel-evidence-demo-v0.1.0",
+  "schema_version": "1.0.0",
+  "source_snapshot": {
+    "files": [
+      {
+        "path": "contracts/canonical_story.schema.json",
+        "sha256": "ce62ee8711b3b2384d79927bfa1d09980414e6ec3826b0bd442f457948077569"
+      },
+      {
+        "path": "contracts/evaluation_task.schema.json",
+        "sha256": "9fa4e999df32f1795e0a90723a0957d6e56b522ed3cae6c0abdda8e8d2606f62"
+      },
+      {
+        "path": "contracts/preference_pair.schema.json",
+        "sha256": "fe5d55718fb165f9c0e8fbe9730240df22fec4ee735c805a53180413e3917222"
+      },
+      {
+        "path": "contracts/quality_metrics.schema.json",
+        "sha256": "ebd402eab26384af5479680607cb0baa3f0a2614377f809b50749958082c28a3"
+      },
+      {
+        "path": "contracts/raw_record.schema.json",
+        "sha256": "b1a0eae05cf05f18952f4c8192cbab2864c699d9630fc2c9bfa5e7069a9ab224"
+      },
+      {
+        "path": "contracts/release_manifest.schema.json",
+        "sha256": "dab150c0074c378a9232387f95ee1ce130db2c9bba32789230485046fc485e83"
+      },
+      {
+        "path": "contracts/sft_sample.schema.json",
+        "sha256": "bf618b5de65c63f8e6795d3da16c85b7d1ec7d236f7e75bd9793d6e173369d3d"
+      },
+      {
+        "path": "pyproject.toml",
+        "sha256": "a46942b585236dbb6ede06271d5ebe3ccdf54990fdebf851668ea9271e3b523a"
+      },
+      {
+        "path": "scripts/check_public_repo.py",
+        "sha256": "80524ba7b72e684b806d7221538960420abc98157415f1616ce217918c2fa2b4"
+      },
+      {
+        "path": "scripts/run_demo.py",
+        "sha256": "bb98545f5d7d56cbfa0da9f07679fe4057e915238d93c6830d055054cdc9aa9f"
+      },
+      {
+        "path": "src/novel_evidence/__init__.py",
+        "sha256": "6804ca3d3002e77a75a23511288d62595761171b802cd08bdf886ea0514480a6"
+      },
+      {
+        "path": "src/novel_evidence/__main__.py",
+        "sha256": "2cdd23d4f5cd6c3b3e4cb690ad16d560637767b9ca5b2a3cf129fcc0a5ebc82b"
+      },
+      {
+        "path": "src/novel_evidence/cli.py",
+        "sha256": "5e1085c8e322f2d9bc4c36470acb72bcf1d34bf980784b7ac1034ac773767a2c"
+      },
+      {
+        "path": "src/novel_evidence/constants.py",
+        "sha256": "a77875cecc12ae3cc29710ba2dc451ba096896e14e81deba4359a92fb454c173"
+      },
+      {
+        "path": "src/novel_evidence/datasets.py",
+        "sha256": "7e54ace7f3353d5d6eff27a52f79a86b265153f6909e99872268d83b0f3377b7"
+      },
+      {
+        "path": "src/novel_evidence/dedup.py",
+        "sha256": "ecbc100ea9151579443bf7d23db345f905021b78db5d52b31114b289530c4cd5"
+      },
+      {
+        "path": "src/novel_evidence/generator.py",
+        "sha256": "a4700074339b0590b239be1002e5c49457f10ee9ba55f434817386793ab74aee"
+      },
+      {
+        "path": "src/novel_evidence/io_utils.py",
+        "sha256": "383f9b463f918f5bee2ede55c1730449d295e5536f8967c15158064ac6edb05b"
+      },
+      {
+        "path": "src/novel_evidence/pipeline.py",
+        "sha256": "abaf856811525f5b0fce3e3be1f17d05d2f32e438930a6360dceb57279e7d1fd"
+      },
+      {
+        "path": "src/novel_evidence/reports.py",
+        "sha256": "a4f40bd42e984a0ad5c138e5620c3c2be5a3bf3b36737d7b49cb6fc49d4f19a4"
+      },
+      {
+        "path": "src/novel_evidence/splitting.py",
+        "sha256": "0c4ffc0f297638f67a7619bf5f94c62e619a4d410a8dbc804a1d2eaceaaa4207"
+      },
+      {
+        "path": "src/novel_evidence/validation.py",
+        "sha256": "5e54317c1d94b7fec4d1fc01abe02136fbc359d6e3f6fbbf0b848089b5372c69"
+      }
+    ],
+    "sha256": "93a8470018e5056d9e2c2efb2ce5724d979bfc84210d247f47ef9f54d7a8d089",
+    "type": "normalized_source_sha256"
+  },
+  "stage_lineage": [
+    {
+      "name": "synthetic_ingestion",
+      "output": "raw/raw_records.jsonl",
+      "stage": 1
+    },
+    {
+      "name": "rights_validation",
+      "output": "processed/rights_accepted.jsonl",
+      "stage": 2
+    },
+    {
+      "name": "normalization",
+      "output": "processed/normalized_records.jsonl",
+      "stage": 3
+    },
+    {
+      "name": "sha256_and_minhash_lsh_dedup",
+      "output": "processed/canonical_stories.jsonl",
+      "stage": 4
+    },
+    {
+      "name": "author_group_split",
+      "output": "datasets/split_assignments.jsonl",
+      "stage": 5
+    },
+    {
+      "name": "dataset_derivation",
+      "output": "datasets/",
+      "stage": 6
+    },
+    {
+      "name": "quality_and_lineage",
+      "output": "metrics/",
+      "stage": 7
+    }
+  ],
+  "training_run_id": "DEMO-TRAINING-NOT-EXECUTED-v0.1.0",
+  "validation": {
+    "contracts": [
+      "contracts/raw_record.schema.json",
+      "contracts/canonical_story.schema.json",
+      "contracts/sft_sample.schema.json",
+      "contracts/preference_pair.schema.json",
+      "contracts/evaluation_task.schema.json",
+      "contracts/release_manifest.schema.json"
+    ],
+    "quality_gates": {
+      "all_records_marked_demo": true,
+      "author_work_content_leakage_zero": true,
+      "evaluation_isolated_from_training": true,
+      "expected_canonical_story_count": true,
+      "expected_evaluation_task_count": true
+    },
+    "status": "passed"
+  }
+}

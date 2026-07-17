@@ -1,0 +1,4 @@
+﻿stage,records,retention_from_previous,retention_from_raw,demo
+raw_records,27,1.000000,1.000000,true
+rights_accepted_records,25,0.925926,0.925926,true
+canonical_stories,20,0.800000,0.740741,true

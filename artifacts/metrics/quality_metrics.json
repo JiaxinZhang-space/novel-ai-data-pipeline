@@ -1,0 +1,57 @@
+{
+  "data_volume": {
+    "canonical_stories": 20,
+    "editor_events": 40,
+    "isolated_evaluation_tasks": 30,
+    "preference_train_pairs": 24,
+    "raw_records": 27,
+    "rights_accepted_records": 25,
+    "rights_rejected_records": 2,
+    "sft_train_samples": 36,
+    "sft_validation_samples": 12
+  },
+  "demo": true,
+  "demo_marker": "DEMO_SYNTHETIC_NOT_REAL_WORLD_EVIDENCE",
+  "disclaimer": "DEMO only: all stories, users, editor events, metrics, contracts, model references, and business-like identifiers are synthetic. They are not proof of publication, usage, revenue, copyright ownership, or model performance.",
+  "duplicates": {
+    "duplicate_rate_after_rights": 0.2,
+    "exact_duplicate_records": 2,
+    "near_duplicate_records": 3,
+    "total_duplicate_records": 5
+  },
+  "editor_time": {
+    "assisted_mean_minutes": 45,
+    "baseline_mean_minutes": 84,
+    "metric_warning": "Synthetic DEMO event data; not a measured productivity claim.",
+    "session_count": 20,
+    "synthetic_time_reduction_rate": 0.464286
+  },
+  "generated_at": "2026-07-16T00:00:00Z",
+  "leakage": {
+    "author_overlap_count": 0,
+    "content_overlap_count": 0,
+    "dataset_isolation_status": "passed",
+    "evaluation_training_author_overlap_count": 0,
+    "evaluation_training_work_overlap_count": 0,
+    "split_leakage_status": "passed",
+    "work_overlap_count": 0
+  },
+  "quality_gates": {
+    "all_records_marked_demo": true,
+    "author_work_content_leakage_zero": true,
+    "evaluation_isolated_from_training": true,
+    "expected_canonical_story_count": true,
+    "expected_evaluation_task_count": true
+  },
+  "retention": {
+    "canonical_retention_after_rights": 0.8,
+    "canonical_retention_from_raw": 0.740741,
+    "rights_acceptance_rate": 0.925926
+  },
+  "split_distribution": {
+    "evaluation": 4,
+    "train": 12,
+    "validation": 4
+  },
+  "status": "passed"
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://demo.local/contracts/release_manifest.schema.json",
+  "title": "DEMO release manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "pipeline_version",
+    "source_snapshot",
+    "demo",
+    "demo_marker",
+    "release_status",
+    "run_id",
+    "dataset_version",
+    "rights_snapshot_version",
+    "training_run_id",
+    "model_version",
+    "eval_version",
+    "parameters",
+    "counts",
+    "stage_lineage",
+    "validation",
+    "files"
+  ],
+  "properties": {
+    "demo": {"const": true},
+    "release_status": {"const": "DEMO_ONLY_NOT_FOR_PRODUCTION"},
+    "source_snapshot": {
+      "type": "object",
+      "required": ["type", "sha256", "files"],
+      "properties": {
+        "type": {"const": "normalized_source_sha256"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "files": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["path", "sha256"],
+            "properties": {
+              "path": {"type": "string"},
+              "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+            }
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["status", "quality_gates", "contracts"],
+      "properties": {"status": {"const": "passed"}}
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "bytes", "sha256"],
+        "properties": {
+          "path": {"type": "string"},
+          "bytes": {"type": "integer", "minimum": 0},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "record_count": {"type": ["integer", "null"], "minimum": 0}
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

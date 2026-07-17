@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://demo.local/contracts/sft_sample.schema.json",
+  "title": "DEMO SFT sample",
+  "type": "object",
+  "required": [
+    "sample_id",
+    "task_type",
+    "instruction",
+    "input",
+    "response",
+    "source_work_id",
+    "source_author_id",
+    "work_id",
+    "author_id",
+    "source_id",
+    "document_id",
+    "rights_record_id",
+    "content_sha256",
+    "dataset_version",
+    "shard_id",
+    "split",
+    "demo"
+  ],
+  "properties": {
+    "sample_id": {"type": "string", "pattern": "^SFT-"},
+    "instruction": {"type": "string", "minLength": 1},
+    "response": {"type": "string", "minLength": 1},
+    "split": {"enum": ["train", "validation"]},
+    "demo": {"const": true}
+  },
+  "additionalProperties": true
+}

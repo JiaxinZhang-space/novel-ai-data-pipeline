@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "novel-ai-data-pipeline"
+version = "0.1.0"
+description = "A reproducible synthetic portfolio demo for governed short-fiction AI data pipelines."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "JiaxinZhang-space"}
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/JiaxinZhang-space/novel-ai-data-pipeline"
+Documentation = "https://github.com/JiaxinZhang-space/novel-ai-data-pipeline#readme"
+
+[project.scripts]
+novel-evidence = "novel_evidence.cli:main"
+
+[project.optional-dependencies]
+dashboard = [
+  "pandas>=2.0,<3",
+  "plotly>=5.20,<7",
+  "streamlit>=1.35,<2",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

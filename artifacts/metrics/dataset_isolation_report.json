@@ -1,0 +1,10 @@
+{
+  "author_overlap": [],
+  "demo": true,
+  "evaluation_author_count": 2,
+  "evaluation_work_count": 4,
+  "status": "passed",
+  "training_author_count": 8,
+  "training_work_count": 16,
+  "work_overlap": []
+}

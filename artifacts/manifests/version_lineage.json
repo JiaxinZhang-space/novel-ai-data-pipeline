@@ -1,0 +1,19 @@
+{
+  "association": {
+    "dataset_to_training_run": "declared_demo_input",
+    "model_to_evaluation": "template_baseline_demo_only",
+    "training_run_to_model": "no_training_executed"
+  },
+  "dataset_version": "novel-demo-data-v0.1.0",
+  "demo": true,
+  "demo_marker": "DEMO_SYNTHETIC_NOT_REAL_WORLD_EVIDENCE",
+  "disclaimer": "DEMO only: all stories, users, editor events, metrics, contracts, model references, and business-like identifiers are synthetic. They are not proof of publication, usage, revenue, copyright ownership, or model performance.",
+  "eval_version": "novel-gold-demo-v0.1.0",
+  "generated_at": "2026-07-16T00:00:00Z",
+  "model_status": "template_baseline_not_trained",
+  "model_version": "template-baseline-demo-v0.1.0",
+  "rights_snapshot_version": "rights-demo-v0.1.0",
+  "run_id": "novel-evidence-demo-v0.1.0",
+  "training_run_id": "DEMO-TRAINING-NOT-EXECUTED-v0.1.0",
+  "training_run_status": "not_executed_demo_placeholder"
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DEMO 小说AI数据证据包概览</title>
+  <style>
+    :root { color-scheme: light; --ink:#17202a; --muted:#5d6d7e; --bg:#f4f6f7; --accent:#6c3483; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:15px/1.6 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--bg); }
+    header { padding:28px max(24px,6vw); color:white; background:linear-gradient(120deg,#4a235a,#1f618d); }
+    header h1 { margin:0 0 8px; }
+    .warning { margin:20px max(24px,6vw); padding:14px 18px; border:2px solid #b03a2e; background:#fdedec; color:#78281f; font-weight:700; }
+    main { max-width:1100px; margin:auto; padding:0 24px 48px; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(145px,1fr)); gap:12px; }
+    .card { padding:18px; border-radius:12px; background:white; box-shadow:0 2px 12px #17202a18; }
+    .card strong { display:block; font-size:28px; color:var(--accent); }
+    .card span { color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:18px; }
+    article { padding:20px; border-radius:12px; background:white; }
+    table { width:100%; border-collapse:collapse; }
+    th,td { padding:8px; text-align:left; border-bottom:1px solid #d5d8dc; }
+    code { background:#f2f3f4; padding:2px 5px; border-radius:4px; }
+  </style>
+</head>
+<body>
+<header><h1>小说 AI 数据证据包 V0.1</h1><div>离线概览 · 2026-07-16T00:00:00Z · DEMO_SYNTHETIC_NOT_REAL_WORLD_EVIDENCE</div></header>
+<div class="warning">DEMO only: all stories, users, editor events, metrics, contracts, model references, and business-like identifiers are synthetic. They are not proof of publication, usage, revenue, copyright ownership, or model performance.</div>
+<main>
+  <div class="cards"><section class="card"><strong>27</strong><span>原始记录</span></section><section class="card"><strong>20</strong><span>最终唯一故事</span></section><section class="card"><strong>48</strong><span>SFT样本</span></section><section class="card"><strong>24</strong><span>偏好对</span></section><section class="card"><strong>30</strong><span>隔离评测任务</span></section><section class="card"><strong>5</strong><span>重复记录</span></section></div>
+  <div class="grid">
+    <article><h2>数据切分</h2><table><tr><th>Split</th><th>故事数</th></tr><tr><td>evaluation</td><td>4</td></tr><tr><td>train</td><td>12</td></tr><tr><td>validation</td><td>4</td></tr></table></article>
+    <article><h2>泄漏门禁</h2>
+      <p>作者重叠：<strong>0</strong></p>
+      <p>作品重叠：<strong>0</strong></p>
+      <p>内容哈希重叠：<strong>0</strong></p>
+      <p>评测隔离：<strong>passed</strong></p>
+    </article>
+    <article><h2>编辑耗时（模拟）</h2>
+      <p>基线均值：84 分钟</p>
+      <p>辅助后均值：45 分钟</p>
+      <p>模拟降幅：46.4%</p>
+      <small>Synthetic DEMO event data; not a measured productivity claim.</small>
+    </article>
+    <article><h2>重复治理</h2>
+      <p>SHA精确重复：2</p>
+      <p>MinHash+LSH近重复：3</p>
+      <p>授权后重复率：20.0%</p>
+    </article>
+  </div>
+</main>
+</body>
+</html>

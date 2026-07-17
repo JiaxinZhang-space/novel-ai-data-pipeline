@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://demo.local/contracts/quality_metrics.schema.json",
+  "title": "DEMO quality metrics",
+  "type": "object",
+  "required": [
+    "demo",
+    "demo_marker",
+    "status",
+    "data_volume",
+    "retention",
+    "duplicates",
+    "split_distribution",
+    "leakage",
+    "editor_time",
+    "quality_gates"
+  ],
+  "properties": {
+    "demo": {"const": true},
+    "status": {"const": "passed"},
+    "data_volume": {
+      "type": "object",
+      "required": ["raw_records", "canonical_stories", "isolated_evaluation_tasks"]
+    }
+  },
+  "additionalProperties": true
+}
+

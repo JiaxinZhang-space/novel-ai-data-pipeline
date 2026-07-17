@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://demo.local/contracts/canonical_story.schema.json",
+  "title": "DEMO canonical story",
+  "type": "object",
+  "required": [
+    "record_id",
+    "source_id",
+    "document_id",
+    "rights_record_id",
+    "author_id",
+    "work_id",
+    "normalized_text",
+    "content_sha256",
+    "split",
+    "dataset_version",
+    "demo"
+  ],
+  "properties": {
+    "content_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "split": {"enum": ["train", "validation", "evaluation"]},
+    "normalization_version": {"const": "nfkc-whitespace-v1"},
+    "dataset_version": {"type": "string"},
+    "demo": {"const": true}
+  },
+  "additionalProperties": true
+}
+
